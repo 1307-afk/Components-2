@@ -1,14 +1,14 @@
 export default function ProductCard({product}) {
   return (
     <>
-      
-      <img src={product.imageURL}/>
-      <h3>{ProductCard.name}</h3> 
-      <p>{ProductCard.description}</p>
-      <div className="price">{ProductCard.price}</div> 
-      {ProductCard.isInStock == false && <p>Unavailable</p>}    
+      <br></br>
+      <img src={product.imageUrl}/>
+      <h3>{product.name}</h3> 
+      <p>{product.description}</p>
+      <div className="price">{product.price}</div> 
+      {product.isInStock == false && <p>Unavailable</p>}    
 
-      <button>Add to Cart</button>
+      <button>Add to Cart</button><br></br>
     </>
   );
 }
